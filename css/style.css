@@ -1,0 +1,121 @@
+.text-lightgray {color: #ccc;}
+.text-darkgray {color: #666;}
+.text-gray {
+    transition: .25s ease;
+    color: #bbb;
+}
+.text-pink {
+    transition: .25s ease;
+    color: #FF1865;
+}
+.bg-pink {background-color: #FF1865;}
+.bg-darkpink, .nav-scroll a:hover {background-color: #B622B5;}
+.search {width: 500px;}
+@media(max-width: 768px) {
+    .search {
+        width: 290px;
+    }
+}
+.search input {width: 87%;}
+.search button {width: 13%;}
+.search input::placeholder {color: #aaa;}
+.search button, .search input {
+    background-color: #EAEAEA;
+    outline: none;
+    border: none;
+}
+.nav-scroll {overflow-x: scroll;}
+.nav-scroll::-webkit-scrollbar {display: none;}
+.nav-scroll a {
+    border-radius: 20px;
+    color: #888;
+}
+.nav-scroll a:hover {border-color: #B622B5;}
+.content {
+    overflow: hidden;
+    transition: 1s;
+}
+.card-text {font-size: 15px;}
+.user-img {
+    overflow: hidden;
+    min-height: 55px;
+    min-width: 55px;
+    height: 55px;
+    width: 55px;
+}
+.more {
+    cursor: pointer;
+    transition: .6s;
+    height: 45px;
+    width: 45px;
+}
+.more:hover {background-color: #E6E6E6;}
+.dropdown-menu {min-width: initial;}
+.user-img img {margin-top: -25%;}
+.social > div, .side-social > div {
+    background-color:#3456;
+    visibility: hidden;
+    transition: .6s;
+    opacity:0;
+}
+.social:hover > div, .side-social:hover > div {
+    visibility: visible;
+    opacity: 1;
+}
+.side-button {
+    position: fixed;
+    transition: .5s;
+    right: -60px;
+    bottom: 33px;
+    z-index: 2;
+}
+.side-button:hover {right: 0;}
+.side-social {
+    background-position: center;
+    background-size: cover;
+    height: 115px;
+}
+.side-social .bg-contrast {background-color: #9998;}
+.map-button {
+    bottom: -24px;
+    right: 0;
+}
+.side-rating img {
+    margin-right: 1px;
+    width: 15px;
+}
+@media(max-width: 992px) {
+    #side {
+        box-shadow: 0 0 20px #fff;
+        transition: .5s;
+        background-color: #fffc;
+        position: absolute;
+        overflow: auto;
+        height: 100%;
+        width: 500px;
+        right: -100%;
+        z-index: 1;
+    }
+    #side::-webkit-scrollbar {display: none;}
+}
+@media(max-width: 550px) {#side {width: 400px;}}
+@media(max-width: 430px) {#side {width: 300px;}}
+footer {font-size: 14.5px;}
+.modal-dialog {
+    max-height: 90vh;
+    max-width: 90vw;
+}
+.carousel img {
+    object-fit: cover;
+    height: 90vh;
+}
+@media(max-width: 768px) {
+    .carousel img {
+        object-fit: initial;
+        height: auto;
+    }
+}
+.izoh {font-size: 14px;}
+.izoh input {outline: none;}
+.izoh input::placeholder {color: #ccc;}
+.izoh input:last-child {width: 100px;}

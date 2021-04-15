@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- NAV -->
+    <div class="container">
+        <nav class="d-flex justify-content-between px-4 pt-3 pb-2">
+            <h5><a class="nav-link text-pink" href="#"><b>PINTOP</b></a></h5>
+            <form class="search nav-link d-none d-md-flex">
+                <button class="rounded-left" type="submit"><img src="./img/icon/search.svg" alt="search"></button>
+                <input class="rounded-right" type="search" placeholder="Nima izlaymiz ?" aria-label="Search">
+            </form>
+            <div class="d-none d-md-flex">
+                <a class="nav-link" href="#"><img src="./img/icon/star_gray_dark.svg" alt="star_gray_dark"></a>
+                <a class="nav-link" href="#"><img src="./img/icon/heart.svg" alt="heart"></a>
+                <a class="nav-link" href="#"><img src="./img/icon/user.svg" alt="user"></a>
+            </div>
+            <div class="d-md-none dropdown">
+                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="./img/icon/bars.svg" alt="bar">
+                </button>
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                    <form class="search d-flex p-3">
+                        <button class="rounded-left" type="submit"><img src="./img/icon/search.svg" alt="search"></button>
+                        <input class="rounded-right" type="search" placeholder="Nima izlaymiz ?" aria-label="Search">
+                    </form>
+                    <div class="text-right px-3 pb-2">
+                        <a href="#"><img src="./img/icon/star_gray_dark.svg" alt="star_gray_dark"></a>
+                        <a href="#"><img src="./img/icon/heart.svg" alt="heart"></a>
+                        <a href="#"><img src="./img/icon/user.svg" alt="user"></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <hr class="mt-1 mb-5">
+
+    <!-- CONTAINER -->
+    <div class="container">
+
+        <!-- MENU -->
+        <nav class="nav-scroll bg-light p-4 rounded text-nowrap">
+            <a class="btn btn-outline-secondary px-3 py-1 my-2 mr-2" href="#">Barchasi</a>
+            <a class="btn btn-outline-secondary px-3 py-1 my-2 mr-2" href="#">Go'zallik va sport</a>
+            <a class="btn btn-outline-secondary px-3 py-1 my-2 mr-2" href="#">Uy va jixozlar</a>
+            <a class="btn btn-outline-secondary px-3 py-1 my-2 mr-2" href="#">Avto va moto</a>
+            <a class="btn btn-outline-secondary px-3 py-1 my-2 mr-2" href="#">Restoran, Kafe, Bar</a>
+            <a class="btn btn-outline-secondary px-3 py-1 my-2 mr-2" href="#">Kiyim - kechak</a>
+            <a class="btn btn-outline-secondary px-3 py-1 my-2 mr-2" href="#">Ko'chmas mulk</a>
+            <a class="btn btn-outline-secondary px-3 py-1 my-2" href="#">Xizmatlar</a>
+        </nav>
+
+        <!-- CONTENT -->
+        <div class="content row position-relative text-darkgray">
+            <div class="col-lg-8">
+
+                <!-- CARD 1 -->
+                <div class="card my-4">
+                    <div class="d-flex justify-content-between align-items-center p-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="user-img rounded-circle">
+                                <img class="w-100" src="./img/user_1.jpg" alt="user_1">
+                            </div>
+                            <div>
+                                <h5 class="pl-3">
+                                    <b>Palonchiev Pistonchi</b>
+                                    <br>
+                                    <small class="text-lightgray">
+                                        <img class="align-text-bottom" src="./img/icon/star_yellow.svg" alt="star_yellow">
+                                        <img class="align-text-bottom" src="./img/icon/star_yellow.svg" alt="star_yellow">
+                                        <img class="align-text-bottom" src="./img/icon/star_yellow.svg" alt="star_yellow">
+                                        <img class="align-text-bottom" src="./img/icon/star_yellow.svg" alt="star_yellow">
+                                        <img class="align-text-bottom mr-1" src="./img/icon/star_gray.svg" alt="star_gray">
+                                        <span class="text-nowrap">( 1500 pts )</span>
+                                    </small>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="d-flex rounded-circle more" role="button" id="dropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="m-auto" src="./img/icon/more_vertical.svg" alt="more_vertical">
+                            </div>
+                            <div class="dropdown-menu dropdown-menu-right mt-2 mr-4 p-2" aria-labelledby="dropdownMenuLink1">
+                              <a class="dropdown-item" href="#">Saqlash</a>
+                              <a class="dropdown-item" href="#">Shikoyat</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social position-relative">
+                        <div class="position-absolute w-100 h-100 d-flex">
+                            <div class="m-auto d-flex">
+                                <a class="badge badge-light rounded-circle m-2 p-3" href="#"><img src="./img/icon/heart_pink.svg" alt="heart_pink"></a>
+                                <a class="badge badge-light rounded-circle m-2 p-3" href="javascript:void(0);" data-toggle="modal" data-target="#exampleModal1"><img src="./img/icon/eye_pink.svg" alt="eye_pink"></a>
+                                <a class="badge badge-light rounded-circle m-2 p-3" href="#"><img src="./img/icon/share_pink.svg" alt="share_pink"></a>
+                            </div>
+                        </div>
+                        <img src="./img/mebel.jpg" class="w-100" alt="mebel">
+                    </div>
+                    <div class="card-body pb-0 pt-3">
+                        <div class="d-flex flex-wrap justify-content-between">
+                            <h5 class="card-title mb-3">Sag'bon mebellar saloni <span class="badge badge-pill font-weight-normal text-light bg-darkpink ml-3 mt-3 px-3 py-1 align-text-bottom">Uy jixozlari</span></h5>
+                            <div class="d-flex align-items-center text-nowrap text-lightgray mb-2">
+                                <img class="mr-1" src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img class="mr-1" src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img class="mr-1" src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img class="mr-1" src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img class="mr-1" src="./img/icon/star_gray_fill.svg" alt="star_gray_fill">
+                                <span class="ml-2">568 pts</span>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p class="card-text">
+                                <b>Manzil:</b> Toshkent shaxar, Mirobod tumani, A. Temur ko'chasi 24 uy.
+                                <br>
+                                <b>Mo'ljal:</b> O'zbekiston mexmonxonasi ro'parasida
+                                <a class="text-pink" href="#">
+                                    <img class="mx-1" src="./img/icon/map_pink.svg" alt="map_pink"> <b>Xaritadan ko'rish</b>
+                                </a>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-end text-lightgray">
+                                <p class="ml-2"><img class="align-text-bottom" src="./img/icon/eye.svg" alt="eye"> 1082</p>
+                                <p class="ml-2"><img class="align-text-bottom" src="./img/icon/thumbs_up.svg" alt="thumbs_up"> 1082</p>
+                                <p class="ml-2"><img class="align-text-bottom" src="./img/icon/thumbs_down.svg" alt="thumbs_down"> 245</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 1 MODAL -->
+                <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="row no-gutters">
+                                <div class="col-lg-8">
+                                    <div id="carouselExampleIndicators1" class="carousel slide rounded" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                                            <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./img/mebel.jpg" class="d-block w-100 rounded" alt="mebel">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./img/mebel.jpg" class="d-block w-100 rounded" alt="mebel">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./img/mebel.jpg" class="d-block w-100 rounded" alt="mebel">
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="border-bottom position-relative p-3">
+                                        <a class="map-button position-absolute badge rounded-circle bg-pink p-3 mr-4" href="#"><img src="./img/icon/map_white.svg" alt="map_white"></a>
+                                        <h6 class="mb-3 px-2">
+                                            Sag'bon mebellar saloni <span class="badge badge-pill font-weight-normal text-light bg-darkpink ml-3 mt-3 px-3 py-1 align-text-bottom">Uy jixozlari</span>
+                                        </h6>
+                                        <p class="px-2 mb-2"><b>Manzil:</b> Toshkent shaxar, Mirobod tumani, A. Temur ko'chasi 24 uy.</p>
+                                        <p class="px-2"><b>Mo'ljal:</b> O'zbekiston mexmonxonasi ro'parasida</p>
+                                        <div class="d-flex flex-wrap align-items-start justify-content-between">
+                                            <div class="d-flex justify-content-between align-items-center text-lightgray">
+                                                <p class="ml-2"><img class="align-text-bottom" src="./img/icon/eye.svg" alt="eye"> 1082</p>
+                                                <p class="ml-2"><img class="align-text-bottom" src="./img/icon/thumbs_up.svg" alt="thumbs_up"> 1082</p>
+                                                <p class="ml-2"><img class="align-text-bottom" src="./img/icon/thumbs_down.svg" alt="thumbs_down"> 245</p>
+                                            </div>
+                                            <div class="d-flex align-items-center text-nowrap text-lightgray mb-2">
+                                                <img class="mr-1" src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                                <img class="mr-1" src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                                <img class="mr-1" src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                                <img class="mr-1" src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                                <img class="mr-1" src="./img/icon/star_gray_fill.svg" alt="star_gray_fill">
+                                                <span class="ml-2">568 pts</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-start mb-5 px-3 pt-4 pb-5">
+                                        <div class="user-img rounded-circle">
+                                            <img class="w-100" src="./img/user_1.jpg" alt="user_1">
+                                        </div>
+                                        <div>
+                                            <h6 class="pl-3">
+                                                <b>Klara Jalilova:</b> <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum iste provident, commodi soluta doloribus recusandae. Dolorem nesciunt illum voluptatum.</small>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <form class="izoh d-flex justify-content-between position-absolute fixed-bottom border-top px-0 py-1" action="#">
+                                        <input class="border-0 p-2 w-100" type="text" placeholder="Izoh matnini yozing">
+                                        <input class="border-0 bg-white text-pink p-2" type="submit" value="Izoh qoldirish">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="card my-4">
+                    <div class="d-flex justify-content-between align-items-center p-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="user-img rounded-circle">
+                                <img class="w-100 mt-0" src="./img/user_2.png" alt="user_2">
+                            </div>
+                            <div>
+                                <h5 class="pl-3">
+                                    <b>Palonchiev Pistonchi</b>
+                                    <br>
+                                    <small class="text-lightgray">
+                                        <img class="align-text-bottom" src="./img/icon/star_yellow.svg" alt="star_yellow">
+                                        <img class="align-text-bottom" src="./img/icon/star_yellow.svg" alt="star_yellow">
+                                        <img class="align-text-bottom" src="./img/icon/star_yellow.svg" alt="star_yellow">
+                                        <img class="align-text-bottom" src="./img/icon/star_yellow.svg" alt="star_yellow">
+                                        <img class="align-text-bottom mr-1" src="./img/icon/star_gray.svg" alt="star_gray">
+                                        <span class="text-nowrap">( 1500 pts )</span>
+                                    </small>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="d-flex rounded-circle more" role="button" id="dropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="m-auto" src="./img/icon/more_vertical.svg" alt="more_vertical">
+                            </div>
+                            <div class="dropdown-menu dropdown-menu-right mt-2 mr-4 p-2" aria-labelledby="dropdownMenuLink2">
+                              <a class="dropdown-item" href="#">Saqlash</a>
+                              <a class="dropdown-item" href="#">Shikoyat</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social position-relative">
+                        <div class="position-absolute w-100 h-100 d-flex">
+                            <div class="m-auto d-flex">
+                                <a class="badge badge-light rounded-circle m-2 p-3" href="#"><img src="./img/icon/heart_pink.svg" alt="heart_pink"></a>
+                                <a class="badge badge-light rounded-circle m-2 p-3" href="javascript:void(0);" data-toggle="modal" data-target="#exampleModal2"><img src="./img/icon/eye_pink.svg" alt="eye_pink"></a>
+                                <a class="badge badge-light rounded-circle m-2 p-3" href="#"><img src="./img/icon/share_pink.svg" alt="share_pink"></a>
+                            </div>
+                        </div>
+                        <img src="./img/b-s.jpg" class="w-100" alt="b-s">
+                    </div>
+                    <div class="card-body pb-0 pt-3">
+                        <div class="d-flex flex-wrap justify-content-between">
+                            <h5 class="card-title mb-3">SB go'zallik saloni <span class="badge badge-pill font-weight-normal text-light bg-darkpink ml-3 mt-3 px-3 py-1 align-text-bottom">Go'zallik va Sport</span></h5>
+                            <div class="d-flex align-items-center text-nowrap text-lightgray mb-2">
+                                <img class="mr-1" src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img class="mr-1" src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img class="mr-1" src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img class="mr-1" src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img class="mr-1" src="./img/icon/star_gray_fill.svg" alt="star_gray_fill">
+                                <span class="ml-2">568 pts</span>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p class="card-text">
+                                <b>Manzil:</b> Toshkent shaxar, Mirobod tumani, A. Temur ko'chasi 24 uy.
+                                <br>
+                                <b>Mo'ljal:</b> O'zbekiston mexmonxonasi ro'parasida
+                                <a class="text-pink" href="#">
+                                    <img class="mx-1" src="./img/icon/map_pink.svg" alt="map_pink"> <b>Xaritadan ko'rish</b>
+                                </a>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-end text-lightgray">
+                                <p class="ml-2"><img class="align-text-bottom" src="./img/icon/eye.svg" alt="eye"> 1082</p>
+                                <p class="ml-2"><img class="align-text-bottom" src="./img/icon/thumbs_up.svg" alt="thumbs_up"> 1082</p>
+                                <p class="ml-2"><img class="align-text-bottom" src="./img/icon/thumbs_down.svg" alt="thumbs_down"> 245</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 2 MODAL -->
+                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="row no-gutters">
+                                <div class="col-lg-8">
+                                    <div id="carouselExampleIndicators2" class="carousel slide rounded" data-ride="carousel">
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                                            <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                                        </ol>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./img/b-s.jpg" class="d-block w-100 rounded" alt="b-s">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./img/b-s.jpg" class="d-block w-100 rounded" alt="b-s">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./img/b-s.jpg" class="d-block w-100 rounded" alt="b-s">
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselExampleIndicators2" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="border-bottom position-relative p-3">
+                                        <a class="map-button position-absolute badge rounded-circle bg-pink p-3 mr-4" href="#"><img src="./img/icon/map_white.svg" alt="map_white"></a>
+                                        <h6 class="mb-3 px-2">
+                                            SB go'zallik saloni <span class="badge badge-pill font-weight-normal text-light bg-darkpink ml-3 mt-3 px-3 py-1 align-text-bottom">Go'zallik va Sport</span>
+                                        </h6>
+                                        <p class="px-2 mb-2"><b>Manzil:</b> Toshkent shaxar, Mirobod tumani, A. Temur ko'chasi 24 uy.</p>
+                                        <p class="px-2"><b>Mo'ljal:</b> O'zbekiston mexmonxonasi ro'parasida</p>
+                                        <div class="d-flex flex-wrap align-items-start justify-content-between">
+                                            <div class="d-flex justify-content-between align-items-center text-lightgray">
+                                                <p class="ml-2"><img class="align-text-bottom" src="./img/icon/eye.svg" alt="eye"> 1082</p>
+                                                <p class="ml-2"><img class="align-text-bottom" src="./img/icon/thumbs_up.svg" alt="thumbs_up"> 1082</p>
+                                                <p class="ml-2"><img class="align-text-bottom" src="./img/icon/thumbs_down.svg" alt="thumbs_down"> 245</p>
+                                            </div>
+                                            <div class="d-flex align-items-center text-nowrap text-lightgray mb-2">
+                                                <img class="mr-1" src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                                <img class="mr-1" src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                                <img class="mr-1" src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                                <img class="mr-1" src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                                <img class="mr-1" src="./img/icon/star_gray_fill.svg" alt="star_gray_fill">
+                                                <span class="ml-2">568 pts</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-start mb-5 px-3 pt-4 pb-5">
+                                        <div class="user-img rounded-circle">
+                                            <img class="w-100 m-0" src="./img/user_2.png" alt="user_2">
+                                        </div>
+                                        <div>
+                                            <h6 class="pl-3">
+                                                <b>Klara Jalilova:</b> <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum iste provident, commodi soluta doloribus recusandae. Dolorem nesciunt illum voluptatum.</small>
+                                            </h6>
+                                        </div>
+                                    </div>
+                                    <form class="izoh d-flex justify-content-between position-absolute fixed-bottom border-top px-0 py-1" action="#">
+                                        <input class="border-0 p-2 w-100" type="text" placeholder="Izoh matnini yozing">
+                                        <input class="border-0 bg-white text-pink p-2" type="submit" value="Izoh qoldirish">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="card my-4">
+                    <div class="d-flex justify-content-between align-items-center p-3">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="user-img rounded-circle">
+                                <img class="w-100" src="./img/user_1.jpg" alt="user">
+                            </div>
+                            <div>
+                                <h5 class="pl-3">
+                                    <b>Palonchiev Pistonchi</b>
+                                    <br>
+                                    <small class="text-lightgray">
+                                        <img class="align-text-bottom" src="./img/icon/star_yellow.svg" alt="star_yellow">
+                                        <img class="align-text-bottom" src="./img/icon/star_yellow.svg" alt="star_yellow">
+                                        <img class="align-text-bottom" src="./img/icon/star_yellow.svg" alt="star_yellow">
+                                        <img class="align-text-bottom" src="./img/icon/star_yellow.svg" alt="star_yellow">
+                                        <img class="align-text-bottom mr-1" src="./img/icon/star_gray.svg" alt="star_gray">
+                                        <span class="text-nowrap">( 1500 pts )</span>
+                                    </small>
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="d-flex rounded-circle more" role="button" id="dropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="m-auto" src="./img/icon/more_vertical.svg" alt="more_vertical">
+                            </div>
+                            <div class="dropdown-menu dropdown-menu-right mt-2 mr-4 p-2" aria-labelledby="dropdownMenuLink3">
+                              <a class="dropdown-item" href="#">Saqlash</a>
+                              <a class="dropdown-item" href="#">Shikoyat</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social position-relative">
+                        <div class="position-absolute w-100 h-100 d-flex">
+                            <div class="m-auto d-flex">
+                                <a class="badge badge-light rounded-circle m-2 p-3" href="#"><img src="./img/icon/heart_pink.svg" alt="heart_pink"></a>
+                                <a class="badge badge-light rounded-circle m-2 p-3" href="javascript:void(0);" data-toggle="modal" data-target="#exampleModal3"><img src="./img/icon/eye_pink.svg" alt="eye_pink"></a>
+                                <a class="badge badge-light rounded-circle m-2 p-3" href="#"><img src="./img/icon/share_pink.svg" alt="share_pink"></a>
+                            </div>
+                        </div>
+                        <img src="./img/d-v.jpg" class="w-100" alt="d-v">
+                    </div>
+                    <div class="card-body pb-0 pt-3">
+                        <div class="d-flex flex-wrap justify-content-between">
+                            <h5 class="card-title mb-3">Avtosalon - Drivers Village <span class="badge badge-pill font-weight-normal text-light bg-darkpink ml-3 mt-3 px-3 py-1 align-text-bottom">Avto va moto</span></h5>
+                            <div class="d-flex align-items-center text-nowrap text-lightgray mb-2">
+                                <img class="mr-1" src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img class="mr-1" src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img class="mr-1" src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img class="mr-1" src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img class="mr-1" src="./img/icon/star_gray_fill.svg" alt="star_gray_fill">
+                                <span class="ml-2">568 pts</span>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p class="card-text">
+                                <b>Manzil:</b> Toshkent shaxar, Mirobod tumani, A. Temur ko'chasi 24 uy.
+                                <br>
+                                <b>Mo'ljal:</b> O'zbekiston mexmonxonasi ro'parasida
+                                <a class="text-pink" href="#">
+                                    <img class="mx-1" src="./img/icon/map_pink.svg" alt="map_pink"> <b>Xaritadan ko'rish</b>
+                                </a>
+                            </p>
+                            <div class="d-flex justify-content-between align-items-end text-lightgray">
+                                <p class="ml-2"><img class="align-text-bottom" src="./img/icon/eye.svg" alt="eye"> 1082</p>
+                                <p class="ml-2"><img class="align-text-bottom" src="./img/icon/thumbs_up.svg" alt="thumbs_up"> 1082</p>
+                                <p class="ml-2"><img class="align-text-bottom" src="./img/icon/thumbs_down.svg" alt="thumbs_down"> 245</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex py-4">
+                    <img class="m-auto" src="./img/indicator.png" alt="indicator">
+                </div>
+            </div>
+
+            <!-- CARD 3 MODAL -->
+            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="row no-gutters">
+                            <div class="col-lg-8">
+                                <div id="carouselExampleIndicators3" class="carousel slide rounded" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleIndicators3" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleIndicators3" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleIndicators3" data-slide-to="2"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="./img/d-v.jpg" class="d-block w-100 rounded" alt="d-v">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./img/d-v.jpg" class="d-block w-100 rounded" alt="d-v">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./img/d-v.jpg" class="d-block w-100 rounded" alt="d-v">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators3" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators3" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="border-bottom position-relative p-3">
+                                    <a class="map-button position-absolute badge rounded-circle bg-pink p-3 mr-4" href="#"><img src="./img/icon/map_white.svg" alt="map_white"></a>
+                                    <h6 class="mb-3 px-2">
+                                        Avtosalon - Drivers Village <span class="badge badge-pill font-weight-normal text-light bg-darkpink ml-3 mt-3 px-3 py-1 align-text-bottom">Avto va moto</span>
+                                    </h6>
+                                    <p class="px-2 mb-2"><b>Manzil:</b> Toshkent shaxar, Mirobod tumani, A. Temur ko'chasi 24 uy.</p>
+                                    <p class="px-2"><b>Mo'ljal:</b> O'zbekiston mexmonxonasi ro'parasida</p>
+                                    <div class="d-flex flex-wrap align-items-start justify-content-between">
+                                        <div class="d-flex justify-content-between align-items-center text-lightgray">
+                                            <p class="ml-2"><img class="align-text-bottom" src="./img/icon/eye.svg" alt="eye"> 1082</p>
+                                            <p class="ml-2"><img class="align-text-bottom" src="./img/icon/thumbs_up.svg" alt="thumbs_up"> 1082</p>
+                                            <p class="ml-2"><img class="align-text-bottom" src="./img/icon/thumbs_down.svg" alt="thumbs_down"> 245</p>
+                                        </div>
+                                        <div class="d-flex align-items-center text-nowrap text-lightgray mb-2">
+                                            <img class="mr-1" src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                            <img class="mr-1" src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                            <img class="mr-1" src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                            <img class="mr-1" src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                            <img class="mr-1" src="./img/icon/star_gray_fill.svg" alt="star_gray_fill">
+                                            <span class="ml-2">568 pts</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-start mb-5 px-3 pt-4 pb-5">
+                                    <div class="user-img rounded-circle">
+                                        <img class="w-100" src="./img/user_1.jpg" alt="user_1">
+                                    </div>
+                                    <div>
+                                        <h6 class="pl-3">
+                                            <b>Klara Jalilova:</b> <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum iste provident, commodi soluta doloribus recusandae. Dolorem nesciunt illum voluptatum.</small>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <form class="izoh d-flex justify-content-between position-absolute fixed-bottom border-top px-0 py-1" action="#">
+                                    <input class="border-0 p-2 w-100" type="text" placeholder="Izoh matnini yozing">
+                                    <input class="border-0 bg-white text-pink p-2" type="submit" value="Izoh qoldirish">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SIDE BUTTON -->
+            <button type="button" class="side-button btn btn-outline-info shadow-lg d-lg-none rounded-0" onclick="openSide();">Biz tavsiya etamiz</button>
+            
+            <!-- SIDE -->
+            <div class="col-lg-4" id="side">
+
+                <!-- SIDE CARD 1 -->
+                <div class="card my-4">
+                    <div class="px-3 py-4">
+                        <h5 class="py-1">
+                            <b>Biz tavsiya etamiz</b>
+                        </h5>
+                    </div>
+
+                    <!-- CD 1 -->
+                    <div class="side-social position-relative" style="background-image:url('./img/a-s.jpg');">
+                        <p class="position-absolute w-100 h-100 bg-contrast"></p>
+                        <a class="map-button position-absolute badge rounded-circle bg-pink p-3 mr-3" href="#"><img src="./img/icon/map_white.svg" alt="map_white"></a>
+                    </div>
+                    <div class="card-body px-2 pt-2">
+                        <h5 class="card-title mb-2">GM - sergeli avto saloni</h5>
+                        <div class="d-flex justify-content-between flex-wrap text-nowrap text-lightgray pb-2">
+                            <div class="side-rating d-flex align-items-center">
+                                <img src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img class="mr-2" src="./img/icon/star_gray_fill.svg" alt="star_gray_fill">
+                                <span>568 pts</span>
+                            </div>
+                            <div class="d-flex">
+                                <div class="ml-2"><img class="align-text-bottom" src="./img/icon/eye.svg" alt="eye"> 1082</div>
+                                <div class="ml-2"><img class="align-text-bottom" src="./img/icon/thumbs_up.svg" alt="thumbs_up"> 1082</div>
+                                <div class="ml-2"><img class="align-text-bottom" src="./img/icon/thumbs_down.svg" alt="thumbs_down"> 245</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CD 2 -->
+                    <div class="side-social position-relative" style="background-image:url('./img/sinema.jpg');">
+                        <p class="position-absolute w-100 h-100 bg-contrast"></p>
+                        <a class="map-button position-absolute badge rounded-circle bg-pink p-3 mr-3" href="#"><img src="./img/icon/map_white.svg" alt="map_white"></a>
+                    </div>
+                    <div class="card-body px-2 pt-2">
+                        <h5 class="card-title mb-2">Sinima Anxor Lokomotiv</h5>
+                        <div class="d-flex justify-content-between flex-wrap text-nowrap text-lightgray pb-2">
+                            <div class="side-rating d-flex align-items-center">
+                                <img src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img class="mr-2" src="./img/icon/star_gray_fill.svg" alt="star_gray_fill">
+                                <span>568 pts</span>
+                            </div>
+                            <div class="d-flex">
+                                <div class="ml-2"><img class="align-text-bottom" src="./img/icon/eye.svg" alt="eye"> 1082</div>
+                                <div class="ml-2"><img class="align-text-bottom" src="./img/icon/thumbs_up.svg" alt="thumbs_up"> 1082</div>
+                                <div class="ml-2"><img class="align-text-bottom" src="./img/icon/thumbs_down.svg" alt="thumbs_down"> 245</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CD 3 -->
+                    <div class="side-social position-relative" style="background-image:url('./img/st77.jpg');">
+                        <p class="position-absolute w-100 h-100 bg-contrast"></p>
+                        <a class="map-button position-absolute badge rounded-circle bg-pink p-3 mr-3" href="#"><img src="./img/icon/map_white.svg" alt="map_white"></a>
+                    </div>
+                    <div class="card-body px-2 pt-2">
+                        <h5 class="card-title mb-2">Street 77 - fastfood</h5>
+                        <div class="d-flex justify-content-between flex-wrap text-nowrap text-lightgray pb-2">
+                            <div class="side-rating d-flex align-items-center">
+                                <img src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img class="mr-2" src="./img/icon/star_gray_fill.svg" alt="star_gray_fill">
+                                <span>568 pts</span>
+                            </div>
+                            <div class="d-flex">
+                                <div class="ml-2"><img class="align-text-bottom" src="./img/icon/eye.svg" alt="eye"> 1082</div>
+                                <div class="ml-2"><img class="align-text-bottom" src="./img/icon/thumbs_up.svg" alt="thumbs_up"> 1082</div>
+                                <div class="ml-2"><img class="align-text-bottom" src="./img/icon/thumbs_down.svg" alt="thumbs_down"> 245</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SIDE CARD 2 -->
+                <div class="card my-4">
+                    <div class="px-3 py-4">
+                        <h5 class="py-1">
+                            <b>Ko'pchilik tanlovi</b>
+                        </h5>
+                    </div>
+
+                    <!-- CD 1 -->
+                    <div class="side-social position-relative" style="background-image:url('./img/v-q.jpg');">
+                        <p class="position-absolute w-100 h-100 bg-contrast"></p>
+                        <a class="map-button position-absolute badge rounded-circle bg-pink p-3 mr-3" href="#"><img src="./img/icon/map_white.svg" alt="map_white"></a>
+                    </div>
+                    <div class="card-body px-2 pt-2">
+                        <h5 class="card-title mb-2">Viqor - kiyimlar saloni</h5>
+                        <div class="d-flex justify-content-between flex-wrap text-nowrap text-lightgray pb-2">
+                            <div class="side-rating d-flex align-items-center">
+                                <img src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img class="mr-2" src="./img/icon/star_gray_fill.svg" alt="star_gray_fill">
+                                <span>568 pts</span>
+                            </div>
+                            <div class="d-flex">
+                                <div class="ml-2"><img class="align-text-bottom" src="./img/icon/eye.svg" alt="eye"> 1082</div>
+                                <div class="ml-2"><img class="align-text-bottom" src="./img/icon/thumbs_up.svg" alt="thumbs_up"> 1082</div>
+                                <div class="ml-2"><img class="align-text-bottom" src="./img/icon/thumbs_down.svg" alt="thumbs_down"> 245</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CD 2 -->
+                    <div class="side-social position-relative" style="background-image:url('./img/sinema.jpg');">
+                        <p class="position-absolute w-100 h-100 bg-contrast"></p>
+                        <a class="map-button position-absolute badge rounded-circle bg-pink p-3 mr-3" href="#"><img src="./img/icon/map_white.svg" alt="map_white"></a>
+                    </div>
+                    <div class="card-body px-2 pt-2">
+                        <h5 class="card-title mb-2">Personal Development Process</h5>
+                        <div class="d-flex justify-content-between flex-wrap text-nowrap text-lightgray pb-2">
+                            <div class="side-rating d-flex align-items-center">
+                                <img src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img class="mr-2" src="./img/icon/star_gray_fill.svg" alt="star_gray_fill">
+                                <span>568 pts</span>
+                            </div>
+                            <div class="d-flex">
+                                <div class="ml-2"><img class="align-text-bottom" src="./img/icon/eye.svg" alt="eye"> 1082</div>
+                                <div class="ml-2"><img class="align-text-bottom" src="./img/icon/thumbs_up.svg" alt="thumbs_up"> 1082</div>
+                                <div class="ml-2"><img class="align-text-bottom" src="./img/icon/thumbs_down.svg" alt="thumbs_down"> 245</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CD 3 -->
+                    <div class="side-social position-relative" style="background-image:url('./img/st77.jpg');">
+                        <p class="position-absolute w-100 h-100 bg-contrast"></p>
+                        <a class="map-button position-absolute badge rounded-circle bg-pink p-3 mr-3" href="#"><img src="./img/icon/map_white.svg" alt="map_white"></a>
+                    </div>
+                    <div class="card-body px-2 pt-2">
+                        <h5 class="card-title mb-2">Street 77 - fastfood</h5>
+                        <div class="d-flex justify-content-between flex-wrap text-nowrap text-lightgray pb-2">
+                            <div class="side-rating d-flex align-items-center">
+                                <img src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img src="./img/icon/star_yellow_fill.svg" alt="star_yellow_fill">
+                                <img class="mr-2" src="./img/icon/star_gray_fill.svg" alt="star_gray_fill">
+                                <span>568 pts</span>
+                            </div>
+                            <div class="d-flex">
+                                <div class="ml-2"><img class="align-text-bottom" src="./img/icon/eye.svg" alt="eye"> 1082</div>
+                                <div class="ml-2"><img class="align-text-bottom" src="./img/icon/thumbs_up.svg" alt="thumbs_up"> 1082</div>
+                                <div class="ml-2"><img class="align-text-bottom" src="./img/icon/thumbs_down.svg" alt="thumbs_down"> 245</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 pb-3">
+                        <a href="#" class="btn btn-block btn-lg bg-darkpink text-light">Yana ko'rsatish</a>
+                    </div>
+                </div>
+
+                <!-- SIDE CARD 3 -->
+                <div class="card my-4">
+                    <div class="px-3 py-4">
+                        <h5 class="py-1">
+                            <b>Ko'p tanlangan kategoriyalar</b>
+                        </h5>
+                    </div>
+                    <div class="px-3 text-nowrap">
+                        <a href="#" class="d-flex align-items-center justify-content-between btn btn-light text-darkgray mb-3 p-2">
+                            <div class="p-1 w-75 text-left">
+                                <b>Restoran, Kafe, Bar</b>
+                            </div>
+                            <div class="p-1 w-25 text-left text-pink">
+                                <img class="align-text-bottom" src="./img/icon/eye_pink.svg" alt="eye_pink" width="18">
+                                1082
+                            </div>
+                        </a>
+                        <a href="#" class="d-flex align-items-center justify-content-between btn btn-light text-darkgray mb-3 p-2">
+                            <div class="p-1 w-75 text-left">
+                                <b>Go'zallik va sport</b>
+                            </div>
+                            <div class="p-1 w-25 text-left text-pink">
+                                <img class="align-text-bottom" src="./img/icon/eye_pink.svg" alt="eye_pink" width="18">
+                                895
+                            </div>
+                        </a>
+                        <a href="#" class="d-flex align-items-center justify-content-between btn btn-light text-darkgray mb-3 p-2">
+                            <div class="p-1 w-75 text-left">
+                                <b>Kino va teatr</b>
+                            </div>
+                            <div class="p-1 w-25 text-left text-pink">
+                                <img class="align-text-bottom" src="./img/icon/eye_pink.svg" alt="eye_pink" width="18">
+                                752
+                            </div>
+                        </a>
+                        <a href="#" class="d-flex align-items-center justify-content-between btn btn-light text-darkgray mb-3 p-2">
+                            <div class="p-1 w-75 text-left">
+                                <b>Avto va moto</b>
+                            </div>
+                            <div class="p-1 w-25 text-left text-pink">
+                                <img class="align-text-bottom" src="./img/icon/eye_pink.svg" alt="eye_pink" width="18">
+                                586
+                            </div>
+                        </a>
+                    </div>
+                    <div class="px-3 pb-3">
+                        <a href="#" class="btn btn-block btn-lg bg-darkpink text-light mt-3">Yana ko'rsatish</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+            <footer class="col-12 d-flex justify-content-between text-uppercase font-weight-bold mt-5 px-3 py-4">
+                <div class="d-flex flex-wrap align-items-end">
+                    <a class="text-gray mr-4 pr-3 mb-3" href="#">biz haqimizda</a>
+                    <a class="text-gray mr-4 pr-3 mb-3" href="#">qoidalari</a>
+                    <a class="text-gray mr-4 pr-3 mb-3" href="#">Ma'lumotlardan foydalanish</a>
+                    <a class="text-gray mr-4 pr-3 mb-3" href="#">qayta aloqa</a>
+                    <a class="text-gray mr-4 pr-3 mb-3" href="#">shaxsiy kabinet</a>
+                </div>
+                <div class="d-flex align-items-end">
+                    <a class="text-pink mr-4 pb-2 mb-2" href="#">pintop.uz</a>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="./bootstrap/js/jquery-3.2.1.slim.min.js"></script>
+    <script src="./bootstrap/js/popper.min.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        function openSide() {
+            let side = document.getElementById('side').style;
+            if (side.right == '0%') {side.right = '-100%'}
+            else {side.right = '0%'}
+        }
+    </script>
+</body>
+</html>
